@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Mistral';
+}
+body{
+	background-image: url('D:/pagina/imagenes/descarga.jpg');
+	background-size: cover;
+	background-position: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+nav{
+	max-width: 900px;
+	margin: auto;
+	background-color: #ffd3be;
+	font-size: 20px;
+	margin-top: 50px;
+}
+.menu-horizontal{
+	list-style: none;
+	display: flex;
+	justify-content: space-around;
+}
+.menu-horizontal > li >a{
+	display: block;
+	padding: 15px 20px;
+	color:#ffaaff;
+	text-decoration: none;
+}
+.menu-horizontal >li:hover{
+	background-color:#55ff7f;
+}
+.menu-vertical{
+	position: absolute;
+	display: none;
+	list-style: none;
+	width: 200px;
+	background-color: rgba(0,0,0,  .2);
+}
+.menu-horizontal li:hover .menu-vertical{
+	display: block;
+}
+.menu-vertical li:hover{
+	background-color:#00aa00;
+	
+}

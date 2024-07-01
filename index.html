@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tablas HTML</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: arial, sans-serif;
+            font-size: 12px;
+            border: 1px solid black;
+            
+        }
+
+        table, th, td {
+            padding: 5px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            text-align: inherit;
+        }
+        
+        .gray-cell {
+            background-color: #F0F0F0; 
+        }
+        
+        .center-text {
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        .red-column {
+            background-color: red;
+            color: white;
+        }
+        
+        .left-align{
+            text-align: left;
+        }
+        .gray-cell-third-row {
+            background-color: #F0F0F0;
+            text-align: right;
+        }
+        .small-cell {
+            width: 140px;
+        }
+        
+         .small-column {
+            width: 20px;    
+        }
+    </style>
+</head>
+<body>
+   
+    <table>
+        <tr>
+            <td>Fecha y hora de recepción:</td>
+            <td class="gray-cell" colspan="2">PLACAS: </td>
+        </tr>
+        <tr>
+            <td>Marca y modelo: </td>
+            <td colspan="2">Fecha y hora de salida:</td>
+        </tr>
+        <tr>
+            <td>Numero de serie:</td>
+            <td>Color: </td>
+            <td class="small-cell">Kilometraje:</td>
+        </tr>
+        <tr>
+            <td>Numero de conductor:</td>
+            <td colspan="2">Correo:</td>
+        </tr>
+        <tr>
+            <td>Persona que recibe (Taller):</td>
+            <td colspan="2">Telefono:</td>
+        </tr>
+    </table>
+    
+     <br><p style="text-align: center; font-size: 15px;" >SERVICIO DE VALET O TRASLADO </p>
+    <br>
+       
+    <table>
+        <tr>
+            <td>Direccion de recoleccion:</td>
+            <td class="gray-cell ">Firma:</td>
+        </tr>
+        <tr>
+            <td colspan="2">Recibio</td>
+        </tr>
+        <tr>
+            <td>Direccion de entrega:</td>
+            <td class="gray-cell">Firma:</td>
+        </tr>
+        <tr>
+            <td colspan="2">Recibio:</td>
+        </tr>
+    </table>
+    
+    <br>
+    
+    <table>
+     <tr class="center-text">
+            <th class="red-column small-cell">CONCEPTO</th>
+            <th class="red-column small-column">SI</th>
+            <th class="red-column small-column">NO</th>
+            <th class="red-column">OBSERVACION</th>
+            <th class="red-column small-cell">CONCEPTO</th>
+            <th class="red-column small-column">SI</th>
+            <th class="red-column small-column">NO</th>
+            <th class="red-column">OBSERVACION</th>
+        </tr>
+        <tr>
+            <td class="gray-cell-third-row">Espejos laterales</td>
+            <td><input type="checkbox" [espejoslateralesObservSI]></td>
+            <td><input type="checkbox" [espejoslateralesObservNO]></td>
+            <td class="left-align">[espejoslateralesObserv]</td>
+            <td class="gray-cell-third-row">Espejo retrovisor</td>
+            <td><input type="checkbox" [espejoretrovisorObservSI]></td>
+            <td class="left-align"><input type="checkbox" [espejoretrovisorObservNO]></td>
+            <td>[espejoretrovisorObserv]</td>
+        </tr>
+        <tr>
+            <td class="gray-cell-third-row">Cristales</td>
+            <td><input type="checkbox" [cristalesObservSI]></td>
+            <td><input type="checkbox" [cristalesObservNO]></td>
+            <td class="left-align">[cristalesObserv]</td>
+            <td class="gray-cell-third-row">Panel de instrumentos</td>
+            <td><input type="checkbox" [paneldeinstrumentosObservSI]></td>
+            <td class="left-align"><input type="checkbox" [paneldeinstrumentosObservNO]></td>
+            <td>[paneldeinstrumentosObserv]</td>
+        </tr>
+        <tr>
+            <td class="gray-cell-third-row">Antena</td>
+            <td><input type="checkbox" [antenaObservSI]></td>
+            <td><input type="checkbox" [antenaObservNO]></td>
+            <td class="left-align">[antenaObserv]</td>
+            <td class="gray-cell-third-row">Auto estereo o radio</td>
+            <td><input type="checkbox" [autoestereooradioObservSI]></td>
+            <td class="left-align"><input type="checkbox" [autoestereooradioObservNO]></td>
+            <td>[autoestereooradioObserv]</td>
+        </tr>
+        <tr>
+            <td class="gray-cell-third-row">Unidad de luces</td>
+            <td><input type="checkbox" [unidaddelucesObservSI]></td>
+            <td><input type="checkbox" [unidaddelucesObservNO]></td>
+            <td class="left-align">[unidaddelucesObserv]</td>
+            <td class="gray-cell-third-row">Encendedor</td>
+            <td><input type="checkbox" [encendedorObservSI]></td>
+            <td class="left-align"><input type="checkbox" [encendedorObservNO]></td>
+            <td>[encendedorObserv]</td>
+        </tr>
+        <tr>
+            <td class="gray-cell-third-row">Llantas</td>
+            <td><input type="checkbox" [llantasObservSI]></td>
+            <td><input type="checkbox" [llantasObservNO]></td>
+            <td class="left-align">[llantasObserv]</td>
+            <td class="gray-cell-third-row">Cenicero</td>
+            <td><input type="checkbox" [ceniceroObservSI]></td>
+            <td class="left-align"><input type="checkbox" [ceniceroObservNO]></td>
+            <td>[ceniceroObserv]</td>
+        </tr>
+        <tr>
+            <td class="gray-cell-third-row">Tapon o centro de rin</td>
+            <td><input type="checkbox" [taponocentroderinObservSI]></td>
+            <td><input type="checkbox" [taponocentroderinObservNO]></td>
+            <td class="left-align">[taponocentroderinObserv]</td>
+            <td class="gray-cell-third-row">Vestiduras</td>
+            <td><input type="checkbox" [vestidurasObservSI]></td>
+            <td class="left-align"><input type="checkbox" [vestidurasObservNO]></td>
+            <td>[vestidurasObserv]</td>
+        </tr>
+        <tr>
+            <td class="gray-cell-third-row">Molduras completas</td>
+            <td><input type="checkbox" [moldurascompletasObservSI]></td>
+            <td><input type="checkbox" [moldurascompletasObservNO]></td>
+            <td class="left-align">[moldurascompletasObserv]</td>
+            <td class="gray-cell-third-row">Manual de usuario</td>
+            <td><input type="checkbox" [manualdeusuarioObservSI]></td>
+            <td class="left-align"><input type="checkbox" [manualdeusuarioObservNO]></td>
+            <td>[manualdeUsuarioObserv]</td>
+        </tr>
+        <tr>
+            <td class="gray-cell-third-row">Tapon de gasolina</td>
+            <td><input type="checkbox" [tapondegasolinaObservSI]></td>
+            <td><input type="checkbox" [tapondegasolinaObservNO]></td>
+            <td class="left-align">[tapondegasolinaObserv]</td>
+            <td class="gray-cell-third-row">Tapetes</td>
+            <td><input type="checkbox" [tapetesObservSI]></td>
+            <td class="left-align"><input type="checkbox" [tapetesObservNO]></td>
+            <td>[tapetesObserv]</td>
+        </tr>
+        <tr>
+            <td class="gray-cell-third-row">Plumillas limpiadoras	</td>
+            <td><input type="checkbox" [plumillaslimpiadorasObservSI]></td>
+            <td><input type="checkbox" [plumillaslimpiadorasObservNO]></td>
+            <td class="left-align">[plumillaslimpiadorasObserv]</td>
+            <td class="gray-cell-third-row">Manijas y bot. de int.	s</td>
+            <td><input type="checkbox" [manijasYBotObservSI]></td>
+            <td class="left-align"><input type="checkbox" [manijasYBotObservNO]></td>
+            <td>[manijasYBotObserv]</td>
+        </tr>
+        <tr>
+            <td class="gray-cell-third-row">Claxon</td>
+            <td><input type="checkbox" [claxonObservSI]></td>
+            <td><input type="checkbox" [claxonObservNO]></td>
+            <td class="left-align">[claxonObserv]</td>
+            <td class="gray-cell-third-row">Extinguidor</td>
+            <td><input type="checkbox" [extinguidorObservSI]></td>
+            <td class="left-align"><input type="checkbox" [extinguidorObservNO]></td>
+            <td>[extinguidorObserv]</td>
+        </tr>
+        <tr>
+            <td class="gray-cell-third-row">Tapon de aceite	</td>
+            <td><input type="checkbox" [tapondeaceiteObservSI]></td>
+            <td><input type="checkbox" [tapondeaceiteObservNO]></td>
+            <td class="left-align">[tapondeaceiteObserv]</td>
+            <td class="gray-cell-third-row">Llanta de refaccion	</td>
+            <td><input type="checkbox" [llantaDeRefaccionObservSI]></td>
+            <td class="left-align"><input type="checkbox" [llantaDeRefaccionObservNO]></td>
+            <td>[llantaDeRefaccionObserv]</td>
+        </tr>
+        <tr>
+            <td class="gray-cell-third-row">Tapon de radiador</td>
+            <td><input type="checkbox" [taponDeRadiadorObservSI]></td>
+            <td><input type="checkbox" [taponDeRadiadorObservNO]></td>
+            <td class="left-align">[taponDeRadiadorObserv]</td>
+            <td class="gray-cell-third-row">Estuche de herramientas</td>
+            <td><input type="checkbox" [estuchedeHerramientasObservSI]></td>
+            <td class="left-align"><input type="checkbox" [estuchedeHerramientasObservNO]></td>
+            <td>[estuchedeHerramientasObserv]</td>
+        </tr>
+        <tr>
+            <td class="gray-cell-third-row">Varilla de aceite</td>
+            <td><input type="checkbox" [varillaDeAceiteObservSI]></td>
+            <td><input type="checkbox" [varillaDeAceiteObservNO]></td>
+            <td class="left-align">[varillaDeAceiteObserv]</td>
+            <td class="gray-cell-third-row">Triangulo de seguridad</td>
+            <td><input type="checkbox" [triangulodeseguridadObservSI]></td>
+            <td class="left-align"><input type="checkbox" [triangulodeseguridadObservNO]></td>
+            <td>[triangulodeseguridadObserv]</td>
+        </tr>
+        <tr>
+            <td class="gray-cell-third-row">Birlos de seguridad</td>
+            <td><input type="checkbox" [birlosDeSeguridadObservSI]></td>
+            <td><input type="checkbox" [birlosDeSeguridadObservNO]></td>
+            <td class="left-align">[birlosDeSeguridadObserv]</td>
+            <td class="gray-cell-third-row">Gato</td>
+            <td><input type="checkbox" [gatoObservSI]></td>
+            <td class="left-align"><input type="checkbox" [gatoObservNO]></td>
+            <td>[gatoObserv]</td>
+        </tr>
+        <tr>
+            <td class="gray-cell-third-row">Llave de birlos</td>
+            <td><input type="checkbox" [llaveDeBirlosObserSI]></td>
+            <td><input type="checkbox" [llaveDeBirlosObserNO]></td>
+            <td class="left-align">[llaveDeBirlosObserv]</td>
+            <td class="gray-cell-third-row">Maneral de gato</td>
+            <td><input type="checkbox" [maneraldegatoObservSI]></td>
+            <td class="left-align"><input type="checkbox" [maneraldegatoObservNO]></td>
+            <td>[maneraldegatoObserv]</td>
+        </tr>  <tr>
+            <td class="gray-cell-third-row">Gancho de arraste</td>
+            <td><input type="checkbox" [ganchodearrastreObservSI]></td>
+            <td><input type="checkbox" [ganchodearrastreObservNO]></td>
+            <td class="left-align">[ganchodearrastreObserv]</td>
+            <td class="gray-cell-third-row">Carnet de servicio</td>
+            <td><input type="checkbox" [carnetdeservicioObservSI]></td>
+            <td class="left-align"><input type="checkbox" [carnetdeservicioObservNO]></td>
+            <td>[carnetdeservicioObserv]</td>
+        </tr>
+        <tr>
+            <td class="gray-cell-third-row">Llave de ruedas</td>
+            <td><input type="checkbox" [llavederuedasObservSI]></td>
+            <td><input type="checkbox" [llavederuedasObservNO]></td>
+            <td class="left-align">[llavederuedasObserv]</td>
+            <td class="gray-cell-third-row">Tarjeta de circulacion</td>
+            <td><input type="checkbox" [tarjetadecirculacionObservSI]></td>
+            <td class="left-align"><input type="checkbox" [tarjetadecirculacionObservNO]></td>
+            <td>[tarjetadecirculacionObserv]</td>
+        </tr>
+        <tr>
+            <td class="gray-cell-third-row">Llave de auto</td>
+            <td><input type="checkbox" [llavedeautoObservSI]></td>
+            <td><input type="checkbox" [llavedeautoObservNO]></td>
+            <td class="left-align">[llavedeautoObserv]</td>
+            <td class="gray-cell-third-row">Talon de verificacion</td>
+            <td><input type="checkbox" [talondeverificacionObservSI]></td>
+            <td class="left-align"><input type="checkbox" [talondeverificacionObservNO]></td>
+            <td>[talondeverificacionObserv]</td>
+        </tr>  <tr>
+            <td class="gray-cell-third-row">Catalizador</td>
+            <td><input type="checkbox" [catalizadorObservNO]></td>
+            <td><input type="checkbox" [catalizadorObservNO]></td>
+            <td class="left-align">[catalizadorObserv]</td>
+            <td class="gray-cell-third-row"></td>
+            <td></td>
+            <td class="left-align"></td>
+            <td></td>
+        </tr>
+    </table>
+    
+    <br>
+    
+    <table>
+        <tr>
+            <td><img src="imagen1.jpg" alt="coches"></td>
+            <td><img src="imagen2.jpg" alt="Imagen 2"></td>
+        </tr>
+    </table>
+    
+    <br>
+    
+    <table>
+        <tr>
+            <td>No. de orden de servicio:</td>
+            <td style="text-align: left; font-size:12px; background-color: #F0F0F0" >¿Vehiculo cuenta con dispositivo GPS?</td>
+        </tr>
+        <tr>
+            <td colspan="2" style="font-weight: bold">Servicio/reparacion realizada:</td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+        </tr>
+        <tr>
+            <td colspan="2">Observaciones / recomendaciones de uso:</td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+        </tr>
+    </table>
+    
+    
+</body>
+</html>
+
+

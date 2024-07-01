@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tablas HTML</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-family: arial, sans-serif;
+            font-size: 12px;
+            border: 1px solid black;
+            
+        }
+
+        table, th, td {
+            border:none;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            text-align: inherit;
+        }
+        
+        .gray-cell {
+            background-color: lightgray; 
+        }
+        
+        .center-text {
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        .red-column {
+            background-color: red;
+            color: white;
+        }
+        
+        .left-align{
+            text-align: left;
+        }
+        .gray-cell-third-row {
+            background-color: lightgray;
+            text-align: right;
+        }
+        .small-cell {
+            width: 140px;
+        }
+        
+         .small-column {
+            width: 20px;    
+        }
+    </style>
+</head>
+<body>
+   
+    <table>
+        <tr>
+            <th>Fecha y hora de recepción</th>
+            <th class="gray-cell" colspan="2">placas </th>
+        </tr>
+        <tr>
+            <td>Marca y modelo: </td>
+            <td colspan="2">Fecha y hora de salida:</td>
+        </tr>
+        <tr>
+            <td>Numero de serie:</td>
+            <td>Color: </td>
+            <td>Kilometraje:</td>
+        </tr>
+        <tr>
+            <td>Numero de conductor:</td>
+            <td colspan="2">Correo:</td>
+        </tr>
+        <tr>
+            <td>Persona que recibe (Taller):</td>
+            <td colspan="2">Telefono:</td>
+        </tr>
+    </table>
+     <br><p>SERVICIO DE VALET O TRASLADO </p>
+       
+    <table>
+        <tr>
+            <td>Direccion de recoleccion:</td>
+            <td class="gray-cell">Firma:</td>
+        </tr>
+        <tr>
+            <td colspan="2">Recibio</td>
+        </tr>
+        <tr>
+            <td>Direccion de entrega:</td>
+            <td class="gray-cell">Firma:</td>
+        </tr>
+        <tr>
+            <td colspan="2">Recibio:</td>
+        </tr>
+    </table>
+    
+    <br>
+    
+     <table>
+     <tr class="center-text">
+            <th class="red-column">Concepto</th>
+            <th class="red-column small-column">SI</th>
+            <th class="red-column small-column">NO</th>
+            <th class="red-column">OBSERVACION</th>
+            <th class="red-column">CONCEPTO</th>
+            <th class="red-column small-column">SI</th>
+            <th class="red-column small-column">NO</th>
+            <th class="red-column">OBSERVACION</th>
+        </tr>
+
+        <tr>
+            <td class="gray-cell-third-row small-cell">Espejos laterales</td>
+            <td><input type="checkbox" [ObservSI]></td>
+            <td><input type="checkbox" [ObservNO]></td>
+            <td class="left-align">[espejoslateralesObserv]</td>
+            <td class="gray-cell-third-row">Espejo retrovisor</td>
+            <td><input type="checkbox" [ObservSI]></td>
+            <td class="left-align"><input type="checkbox" [ObservNO]></td>
+            <td>[espejoretrovisorObserv]</td>
+        </tr>
+        <tr>
+            <td class="gray-cell-third-row">Cristales</td>
+            <td><input type="checkbox" [ObservSI]></td>
+            <td><input type="checkbox" [ObservNO]></td>
+            <td class="left-align">[cristalesObserv]</td>
+            <td class="gray-cell-third-row">Panel de instrumentos</td>
+            <td><input type="checkbox" [ObservSI]></td>
+            <td class="left-align"><input type="checkbox" [ObservNO]></td>
+            <td>[paneldeinstrumentosObserv]</td>
+        </tr>
+    </table>
+    
+    <br>
+    
+    <table>
+        <tr>
+            <td><img src="imagen1.jpg" alt="Imagen 1"></td>
+            <td><img src="imagen2.jpg" alt="Imagen 2"></td>
+        </tr>
+            </table>
+    
+</body>
+</html>
+
+
